@@ -21,7 +21,7 @@ export const MovieProvider=({children})=>{
     }
 
     const removefromfavs=(movieId)=>{
-        setfavorites(prev=>prev.filter(movie.id!=movieId))
+        setfavorites(prev=>prev.filter(movie=>movie.id!=movieId))
     }
 
     const checkfavs=(movieId)=>{
